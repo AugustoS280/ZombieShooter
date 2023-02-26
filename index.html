@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/confg/p5.js"></script>
+    <script src="confg/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+    
+    <script src="confg/firebase-app.js"></script>
+    <script src="confg/firebase-database.js"></script>
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyBm-DtswII6SF0L7Jc5HDuj4ty8zNT51NU",
+        authDomain: "calvo-v3.firebaseapp.com",
+        databaseURL: "https://calvo-v3-default-rtdb.firebaseio.com",
+        projectId: "calvo-v3",
+        storageBucket: "calvo-v3.appspot.com",
+        messagingSenderId: "170398886276",
+        appId: "1:170398886276:web:b65e8c4747d9d07c6a55d1"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <script src="./confg/p5.dom.min.js"></script>
+    <script src="./confg/p5.play.js"></script>
+    <script src="./confg/p5.sound.js"></script>
+
+    <script src="./js/Characters/Zumbi.js"></script>
+    <script src="./js/Characters/tiro.js"></script>
+    <script src="./js/Characters/Fogo.js"></script>
+    <script src="./js/Characters/moeda.js"></script>
+    
+    <script src="./js/page/GameOver.js"></script>
+    <script src="./js/page/Enter.js"></script>  
+    <script src="./js/page/Form.js"></script>
+    <script src="./js/page/User.js"></script>
+    <script src="./js/page/Pause.js"></script>
+    <script src="./js/page/HP.js"></script>
+    <script src="./js/page/Loja.js"></script>
+    <script src="./js/page/Creditos.js"></script>
+    <script src="./js/page/Config.js"></script>
+
+    <script src="./sketch.js"></script>
+  </body>
+</html>

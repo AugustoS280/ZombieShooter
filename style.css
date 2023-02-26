@@ -1,0 +1,349 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: vollkorn;
+  src: url(./assets/Vollkorn-Bold.ttf);
+}
+
+canvas {
+  display: block;
+}
+
+.gameTitle{
+  width: 85%;
+  height: 160px;
+}
+
+.grana{
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  font-family: vollkorn;
+  text-align: center;
+  user-select: none
+}
+
+.nome{
+  font-size: 144px;
+  color: rgb(179, 6, 6);
+  font-family: vollkorn;
+  text-shadow: -10px 10px 0 rgb(17, 16, 16);
+  text-align: center;
+  user-select: none;
+  text-decoration: underline;
+}
+.GO{
+  font-size: 144px;
+  color: rgb(179, 6, 6);
+  font-family: vollkorn;
+  text-shadow: -12px 12px 0 rgb(17, 16, 16);
+  text-align: left;
+  user-select: none;
+  text-decoration: underline;
+}
+
+.pontos{
+  font-size: larger;
+  font-family: vollkorn;
+  color: rgb(30, 43, 216);
+  text-shadow: -1px 1px 0 rgb(17, 16, 16);
+  text-align: center;
+}
+
+.botão{
+  width: 50px;
+  height: 50px;
+  background-image: url("./assets/reset.png");
+  background-size: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+
+.gameTitleAfterEffect{
+  width: 25%;
+  height: 80px;
+}
+
+.aviso{
+  font-size: 40px;
+  color: rgb(233, 17, 17);
+  font-family: vollkorn;
+  text-align: center;
+  user-select: none
+}
+
+.arma{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-family: vollkorn;
+  text-align: center;
+  width: 220px;
+  border: 3px solid #2c0a8a;
+  border-radius: 20px;
+  padding: 15px 15px 15px 15px;;
+  user-select: none
+}
+
+.greeting{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-family: vollkorn;
+  text-align: center;
+  user-select: none
+}
+
+.greeting2{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-family: vollkorn;
+  text-align: center;
+  text-decoration: underline;
+  user-select: none
+}
+
+.fim{
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  text-align:center;
+  font-family: vollkorn;
+  text-decoration: underline;
+  user-select: none;
+}
+
+
+.usuarioN{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-family: vollkorn;
+  text-align: left;
+  user-select: none
+}
+
+.marcadorPartida{
+  font-size: 48px;
+  color: rgb(0, 0, 0);
+  font-family: vollkorn;
+  margin-left: 3.133cm;
+  text-align:left;
+  text-decoration: underline;
+  user-select: none;
+}
+
+.preço{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-family: vollkorn;
+  text-align: center;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 5px;;
+  user-select: none
+}
+
+.customMediumInput{
+  width:400px;
+  height:60px;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 5px;
+  background-color:transparent;
+  font-size: 40px;
+  outline:none;
+  color:rgb(0, 0, 0);
+  font-family: vollkorn;
+  text-align: center;
+}
+
+.caro{
+  font-size: 48px;
+  color: rgb(255, 0, 0);
+  font-family: vollkorn;
+  margin-left: 3.133cm;
+  text-align:left;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 0, 0);
+  user-select: none;
+}
+.ntem{
+  font-size: 48px;
+  width: 400px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);  
+  color: rgb(0, 0, 0);
+  
+  font-family: vollkorn;
+  text-align:center;
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 0, 0);
+  user-select: none;
+  border:5px solid #2c0a8a;
+  border-color: #2c0a8a;
+  border-radius: 50px;
+}
+.barato{
+  font-size: 48px;
+  color: rgb(12, 197, 18);
+  font-family: vollkorn;
+  margin-left: 3.133cm;
+  text-align:left;
+  text-decoration: underline;
+  text-decoration-color: rgb(12, 197, 18);
+  user-select: none;
+}
+
+.customInput {
+  width:200px;
+  height:30px;
+  border: 3px solid rgb(83, 73, 73);
+  border-radius: 5px;
+  padding: 5px;
+  background-color:transparent;
+  font-size: 20px;
+  outline:none;
+  color:rgb(0, 0, 0);
+  font-family: vollkorn;
+  text-align: center;
+  
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0, 0, 0);
+  opacity: 0.5; /* Firefox */
+}
+
+.customBigButtom{
+  width:500px;
+  height:200px;
+  background-color: #2c0a8a;
+  border: 3px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-weight:bold;
+  border-radius: 10px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 70px;
+  font-family: vollkorn;
+  margin: 10px 5px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  outline: none;
+  user-select: none
+}
+
+.custom_S_size_Button{
+  width:180px;
+  height:50px;
+  background-color: #2c0a8a;
+  border: 3px solid rgb(0, 0, 0);
+  color: #FFFF;
+  font-weight:bold;
+  border-radius: 10px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: vollkorn;
+  margin: 8px 4px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  outline: none;
+  user-select: none
+}
+.custom_M_size_Button{
+  width:250px;
+  height:67px;
+  background-color: #2c0a8a;
+  border: 3px solid rgb(0, 0, 0);
+  color: #FFFF;
+  font-weight:bold;
+  border-radius: 10px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-family: vollkorn;
+  margin: 8px 4px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  outline: none;
+  user-select: none
+}
+.custom_G_size_Button{
+  width:480px;
+  height:140px;
+  background-color: #2c0a8a;
+  border: 3px solid rgb(0, 0, 0);
+  color: #FFFF;
+  font-weight:bold;
+  border-radius: 10px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 48px;
+  font-family: vollkorn;
+  margin: 8px 4px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  outline: none;
+  user-select: none
+}
+
+.custom_G_size_Button_Used{
+  width:480px;
+  height:140px;
+  background-color: #545357;
+  border: 3px solid rgb(0, 0, 0);
+  color: #FFFF;
+  font-weight:bold;
+  border-radius: 10px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 48px;
+  font-family: vollkorn;
+  margin: 8px 4px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  outline: none;
+  user-select: none
+}
+
+
+
+
+.customButton {
+  width:180px;
+  height:50px;
+  background-color: #fea834;
+  border: 3px solid white;
+  color: #FFFF;
+  font-weight:bold;
+  border-radius: 10px;
+  margin-bottom:100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: vollkorn;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  outline: none;
+  user-select: none
+}
